@@ -133,6 +133,7 @@ export default async function session(
               email: user.email,
               image: user.image,
             },
+            sessionToken,
             expires: session.expires.toISOString(),
           },
           user,
